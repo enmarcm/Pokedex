@@ -1,0 +1,67 @@
+.main{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+}
+
+.containerPokemon{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(255, 247, 247);
+    min-height: calc(100vh - 100px);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.containerImgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerImgs > img{
+    width: 50%;
+    height: 50%;
+}
+
+.containerInfo{
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.containerInfo > *{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.containerInfo > .id{
+    text-align: center;
+    color: rgb(168, 0, 0);
+    font-size: 4rem;
+}
+
+.containerInfo > .nombre{
+    color: black;
+    font-size: 3rem;
+}
+
+.containerInfo > .habilidades{
+    text-align: left;
+    margin-top: -15px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .containerPokemon{
+        grid-template-columns: 1fr;
+    }
+}
+
