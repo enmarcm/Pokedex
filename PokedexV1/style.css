@@ -1,0 +1,275 @@
+:root{
+    --rojoBasico: rgb(187, 42, 42);
+    --colorFondo: rgb(233, 233, 233);
+    --grisCard: #9c9c9ce4;
+
+
+    /* Ahora los colores de cada tipo de Pokemon */
+    --NormalColor: gray;
+    --FuegoColor: rgb(198, 63, 6);
+    --AguaColor: rgb(41, 81, 224);
+    --PlantaColor: rgb(2, 165, 2) ;
+    --ElectricoColor: rgb(210, 210, 0);
+    --HieloColor: rgb(151, 151, 247);
+    --LuchaColor: rgba(69, 0, 0, 0.411);
+    --VenenoColor: rgb(184, 4, 208);
+    --TierraColor: rgb(123, 53, 53);
+    --VoladorColor: rgb(147, 248, 233);
+    --PsiquicoColor: rgb(238, 112, 255);
+    --BichoColor: rgb(72, 95, 77);
+    --RocaColor: rgb(43, 41, 41);
+    --FantasmaColor: rgb(255, 211, 211);
+    --DragonColor: rgb(37, 0, 129);
+    --OscuroColor: #000000;
+    --AceroColor: #808080;
+    --HadaColor: rgb(255, 174, 187);
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+.nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: var(--rojoBasico)
+    
+}
+
+.titleNav{
+    color: white;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.nav > img{
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    background-color: var(--colorFondo);
+    min-height: 100vh;
+}
+
+.containerMain{
+    margin: auto;
+    width: 80%;
+
+    min-height: 100vh;
+}
+
+.containerCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+
+
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 55% 45%;
+    margin: auto;
+    width: 20rem;
+    height: 32rem;
+    border: 1px solid var(--grisCard);
+    border-radius: 10px;
+}
+
+.cardImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.infoCard{
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    margin: 10px;
+    padding: 0.8rem;
+    border-radius: 25px;
+    background-color: var(--grisCard);
+}
+
+p.numero, p.nombre{
+    color: white;
+    text-align: center;
+}
+
+p.numero{
+    font-size: 32px;
+    color: white;
+}
+
+p.nombre{
+    font-size: 40px;
+    color: white;
+}
+
+.tipos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tipo{
+    padding: 2px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    width: 80px;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+    box-shadow: 1px 2px 4px gray;
+}
+
+.normal{
+	background-color: var(--NormalColor);
+}
+
+.fire{
+	background-color: var(--FuegoColor);
+}
+
+.water{
+	background-color: var(--AguaColor);
+}
+
+.grass{
+	background-color: var(--PlantaColor);
+}
+
+.electric{
+	background-color: var(--ElectricoColor);
+}
+
+.fighting{
+	background-color: var(--LuchaColor);
+}
+
+.ice{
+	background-color: var(--HieloColor);
+}
+
+.poison{
+	background-color: var(--VenenoColor);
+}
+
+.ground{
+	background-color: var(--TierraColor);
+}
+
+.flying{
+	background-color: var(--VoladorColor);
+}
+
+.psychic{
+	background-color: var(--PsiquicoColor);
+}
+
+.bug{
+	background-color: var(--BichoColor);
+}
+
+.rock{
+	background-color: var(--RocaColor);
+}
+
+.ghost{
+	background-color: var(--FantasmaColor);
+}
+
+.dragon{
+	background-color: var(--DragonColor);
+}
+
+.dark{
+	background-color: var(--OscuroColor);
+}
+
+.steel{
+	background-color: var(--AceroColor);
+}
+
+.fairy{
+	background-color: var(--HadaColor);
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn{
+    text-align: center;
+    color: white;
+    padding: 15px;
+    width: 20%;
+    background-color: var(--rojoBasico);
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px var(--rojoBasico);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    width: 100vp;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1680px){
+    .containerCards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px){
+    .containerCards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px){
+    .containerCards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        margin: 1rem 0 ;
+        width: 100%;
+        height: 70vh;
+    }
+
+}
